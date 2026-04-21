@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 CTL Conference Scheduler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-g7mTw15K.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DVR_n9bj.css">
+</head>
+
+<body>
+  <!-- Solid Material Design Background -->
+  <div class="app-container material-panel">
+    <header class="app-header">
+      <h1>Celebrating Teaching & Learning 2026</h1>
+      <p class="subtitle">Schedule Builder</p>
+    </header>
+
+    <nav class="view-tabs" role="tablist" aria-label="Schedule Views">
+      <button id="tab-build" class="tab-btn active" role="tab" aria-selected="true" aria-controls="view-build"
+        tabindex="0">Build Schedule</button>
+      <button id="tab-my" class="tab-btn" role="tab" aria-selected="false" aria-controls="view-my" tabindex="-1">My
+        Schedule</button>
+    </nav>
+
+    <main id="view-build" class="view-section active" role="tabpanel" aria-labelledby="tab-build" tabindex="0">
+      <!-- JS will populate schedule options here -->
+      <div id="schedule-options-container"></div>
+    </main>
+
+    <main id="view-my" class="view-section hidden" role="tabpanel" aria-labelledby="tab-my" tabindex="0">
+      <!-- JS will populate the user's selected schedule here -->
+      <div id="my-schedule-container" aria-live="polite"></div>
+    </main>
+
+    <footer class="app-footer">
+      <p>Brought to you by CATLST</p>
+    </footer>
+  </div>
+</body>
+
+</html>
