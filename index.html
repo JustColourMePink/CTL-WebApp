@@ -10,8 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <script type="module" crossorigin src="/CTL-WebApp/assets/index-Dn7u_L5q.js"></script>
-  <link rel="stylesheet" crossorigin href="/CTL-WebApp/assets/index-fGfOm8ey.css">
+  <script type="module" crossorigin src="/CTL-WebApp/assets/index-Dr24Eosf.js"></script>
+  <link rel="stylesheet" crossorigin href="/CTL-WebApp/assets/index-COlWyKZG.css">
 </head>
 
 <body>
@@ -41,8 +41,47 @@
 
     <footer class="app-footer">
       <p>Brought to you by CATLST</p>
+      <p><a href="#" id="privacy-link" class="footer-link">Privacy Policy</a></p>
     </footer>
   </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+    <div class="modal-content">
+      <header class="modal-header">
+        <h2 id="privacy-modal-title">Privacy Policy</h2>
+        <button id="close-privacy-modal" class="close-btn" aria-label="Close Privacy Policy Modal">&times;</button>
+      </header>
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 20px;">Last Updated: May 28, 2026</p>
+        <p>This privacy policy outlines how the 2026 CTL Conference Scheduler collects, uses, and protects your information.</p>
+        
+        <h3>1. Data Collection & Usage</h3>
+        <p>To help you build and manage your schedule, this application uses the following data:</p>
+        <ul>
+          <li><strong>Local Selection Data:</strong> Your schedule selections are stored locally in your browser's local storage (<code>ctl-schedule</code>) so they persist between visits.</li>
+          <li><strong>Anonymous Device Identifier:</strong> A randomly generated, non-personally identifiable Device ID (stored in <code>ctl-device-id</code>) is created to uniquely identify your session.</li>
+          <li><strong>Selection Syncing:</strong> When you select or deselect sessions, the application sends the event title, selected action (select, deselect, or change), your anonymous Device ID, and a timestamp to a synchronization endpoint (Google Apps Script).</li>
+        </ul>
+
+        <h3>2. Personal Information</h3>
+        <p>This application does not collect, request, or store any personally identifiable information (such as your name, email address, or physical location).</p>
+
+        <h3>3. Data Storage & Security</h3>
+        <p>All data stored in your browser's local storage remains on your device until you clear your data. Sync data sent to the Google Apps Script endpoint is used solely for schedule compilation and aggregate analytics to improve future conferences.</p>
+
+        <h3>4. Third-Party Services</h3>
+        <p>Synchronization services are hosted via Google Apps Script (subject to Google's privacy policy). No other third-party trackers or cookies are utilized.</p>
+
+        <h3>5. Contact</h3>
+        <p>If you have any questions or feedback regarding this privacy policy or the CTL Conference Scheduler, please contact CATLST.</p>
+      </div>
+      <footer class="modal-footer">
+        <button id="close-privacy-modal-btn" class="action-btn">Close</button>
+      </footer>
+    </div>
+  </div>
+
 </body>
 
 </html>
